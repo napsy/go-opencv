@@ -156,25 +156,30 @@ const (
 )
 
 func Round(value float64) int {
-	rv := C.cvRound(C.double(value))
-	return int(rv)
+	return int(value)
+	//rv := C.cvRound(C.double(value))
+	//return int(rv)
 }
 func Floor(value float64) int {
-	rv := C.cvFloor(C.double(value))
-	return int(rv)
+	return int(value)
+	//rv := C.cvFloor(C.double(value))
+	//return int(rv)
 }
 func Ceil(value float64) int {
-	rv := C.cvCeil(C.double(value))
-	return int(rv)
+	return int(value)
+	//rv := C.cvCeil(C.double(value))
+	//return int(rv)
 }
 
 func IsNaN(value float64) int {
-	rv := C.cvIsNaN(C.double(value))
-	return int(rv)
+	return int(value)
+	//rv := C.cvIsNaN(C.double(value))
+	//return int(rv)
 }
 func IsInf(value float64) int {
-	rv := C.cvIsInf(C.double(value))
-	return int(rv)
+	return int(value)
+	//rv := C.cvIsInf(C.double(value))
+	//return int(rv)
 }
 
 /*************** Random number generation *******************/
